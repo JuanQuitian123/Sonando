@@ -1,0 +1,23 @@
+<!-- 
+    Var usuarioRegistro = {
+        nombre: 'pedro',
+        apellido: 'Gerrero'.
+        correo: 'pedro.pedro',
+        contrasena: '123'
+    } 
+ -->
+ <form #formularioRegistro="ngForm" (ngSubmit)="registrarUsuario()">
+     <input type="text" placeholder="Nombre" name="nombre"
+     #nombre="ngModel" [(ngModel)]="usuarioRegistro.nombre" />
+     <br>
+     <input type="text" placeholder="Apellido" name="apellido"
+     #apellido="ngModel" [(ngModel)]="usuarioRegistro.apellido" />
+     <br>
+     <input type="text" placeholder="Correo" name="correo"
+     #correo="ngModel" [(ngModel)]="usuarioRegistro.correo" />
+     <br>
+     <input type="password" placeholder="Contraseña" name="contrasena"
+     #contrasena="ngModel" [(ngModel)]="usuarioRegistro.contrasena" />
+     <br>
+     <button type="submit">Registrate</button>
+ </form>

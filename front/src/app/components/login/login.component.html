@@ -1,0 +1,9 @@
+<form #formuluarioLogin="ngForm" (ngSubmit)="loginUsuario()">
+    <input type="text" placeholder="Correo Electrónico" name="correo"
+    #correo="ngModel" [(ngModel)]="login.correo" />
+    <br>
+    <input type="password" placeholder="Contraseña" name="contrasena"
+    #contrasena="ngModel" [(ngModel)]="login.contrasena" />
+    <br>
+    <button type="submit">Iniciar Sesión</button>
+</form>
